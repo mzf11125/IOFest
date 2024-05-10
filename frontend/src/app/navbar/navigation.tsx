@@ -18,7 +18,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
-import Logo from "./logo";
+// import Logo from "./logo";
 
 const components: { title: string; description: string }[] = [
   {
@@ -65,53 +65,6 @@ export function NavigationMenuBar() {
       {/* Add justify-center class */}
       <NavigationMenu className="items-center">
         <NavigationMenuList className="hidden md:flex md:space-x-4">
-          {/* <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <Logo />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Buto Ijo
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Newsletter for and made by Indonesian Developers
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem title="Introduction">Learn about Buto Ijo</ListItem>
-              <ListItem title="Demo">Email examples</ListItem>
-              <ListItem title="Community">
-                Join the community and get help or support.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem> */}
-          {/* <NavigationMenuItem>
-          <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title}>
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className="font-medium">
-              Documentation
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem> */}
           <NavigationMenuItem>
             <Button className="text-md" variant="ghost">
               <Link href="/" legacyBehavior passHref>
@@ -148,18 +101,6 @@ export function NavigationMenuBar() {
               </Link>
             </Button>
           </NavigationMenuItem>
-          {/* <NavigationMenuItem>
-            <Button className="text-md" variant="ghost">
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className="
-              font-medium"
-                >
-                  Events
-                </NavigationMenuLink>
-              </Link>
-            </Button>
-          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <Button className="text-md" variant="ghost">
               <Link href="/#carousel" legacyBehavior passHref>

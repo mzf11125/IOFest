@@ -1,4 +1,8 @@
-const navbar = () => {
+import ActionButtons from "./action-buttons";
+// import Logo from "./logo";
+import { NavigationMenuBar } from "./navigation";
+
+const Navbar = () => {
   return (
     <div
       className="
@@ -9,14 +13,14 @@ const navbar = () => {
     text-white
     "
     >
-      <test
+      <NavigationMenuBar />
       <div className="flex justify-center items-center mr-80">
         {" "}
-        <Logo />
+        {/* <Logo /> */}
       </div>
       <ActionButtons />
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;
